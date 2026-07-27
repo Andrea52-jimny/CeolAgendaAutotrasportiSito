@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BusItinera - Plan for Bus</title>
+<title>Funzionalità — BusItinera</title>
 <link rel="icon" type="image/png" href="logo.png">
 <meta name="description" content="BusItinera: pianifica viaggi, evita doppie prenotazioni di mezzi e autisti, gestisci pagamenti e clienti. Gli autisti vedono i loro viaggi sul telefono. Sul tuo server o nel cloud.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -252,51 +252,24 @@ img.zoom:hover{opacity:.92}
   <div class="nav-in">
     <a href="index.html" class="nav-logo"><span class="nav-badge"><img src="logo.png" alt="BusItinera"></span><div class="nav-logo-t">Bus<span>Itinera</span></div></a>
     <div class="nav-links" id="navLinks">
-      <a href="#calendario">Agenda</a>
-      <a href="#gestione">Viaggi</a>
-      <a href="#preventivi">Preventivi</a>
-      <a href="#autisti">Autisti</a>
-      <a href="#deploy">Dove funziona</a>
-      <a href="#galleria">Galleria</a>
+      <a href="index.html">Home</a>
+      <a href="funzionalita.html">Funzionalità</a>
+      <a href="galleria.html">Galleria</a>
       <a href="chi-sono.html">Chi sono</a>
-      <a href="#contatti" class="nav-cta">Richiedi demo</a>
+      <a href="index.html#contatti" class="nav-cta">Richiedi demo</a>
     </div>
     <button class="mob-tog" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-logo rv"><img src="logo.png" alt="BusItinera"></div>
-    <h1 class="rv d1">L'<span class="hl">agenda digitale</span> della tua flotta, <span class="hl2">sempre aggiornata</span></h1>
-    <p class="hero-p rv d2">BusItinera sostituisce quaderni, fogli Excel e messaggi sparsi, in un unico ambiente nel quale pianificare viaggi, sapere sempre quale mezzo e quale autista è libero, e tenere sotto controllo pagamenti e clienti. <br><strong>Gli autisti vedono i loro viaggi direttamente sul telefono.</strong><br></p>
-    <div class="hero-btns rv d3">
-      <a href="#contatti" class="btn-p">Richiedi una demo gratuita
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#calendario" class="btn-s">Scopri come funziona</a>
-    </div>
-    <p class="hero-note rv d3">Sul tuo server aziendale o nel cloud · Nessun canone obbligatorio · Demo su misura</p>
+<!-- INTRO FUNZIONALITA -->
+<section class="sec" style="padding-top:130px;padding-bottom:0">
+  <div class="wrap center">
+    <div class="eyebrow">Funzionalità</div>
+    <h1 class="h2 rv" style="font-size:clamp(2rem,4.8vw,3.1rem)">Tutto quello che fa BusItinera</h1>
+    <p class="sub rv d1" style="margin:0 auto">Ogni parte del gestionale spiegata in modo semplice, con gli screenshot reali dell'app.</p>
   </div>
 </section>
-
-<!-- TRUST STRIP -->
-<div class="strip">
-  <div class="wrap">
-    <div class="strip-row rv">
-      <div class="chip"><span class="dot dot-b"></span>Agenda con vista giorno, settimana e mese</div>
-      <div class="chip"><span class="dot dot-o"></span>Niente doppie prenotazioni</div>
-      <div class="chip"><span class="dot dot-g"></span>App per gli autisti sul telefono</div>
-      <div class="chip"><span class="dot dot-v"></span>Navigazione Google Maps integrata</div>
-      <div class="chip"><span class="dot dot-b"></span>Pagamenti sotto controllo</div>
-      <div class="chip"><span class="dot dot-o"></span>Preventivi e conferme d'ordine</div>
-      <div class="chip"><span class="dot dot-g"></span>Scadenze di veicoli e patenti</div>
-      <div class="chip"><span class="dot dot-v"></span>Note private per l'ufficio</div>
-    </div>
-  </div>
-</div>
-
 <!-- CALENDARIO -->
 <section class="sec sec-soft" id="calendario">
   <div class="wrap">
@@ -492,7 +465,7 @@ img.zoom:hover{opacity:.92}
 </section>
 
 <!-- ANAGRAFICHE -->
-<section class="sec">
+<section class="sec" id="anagrafiche">
   <div class="wrap">
     <div class="center" style="margin-bottom:56px">
       <div class="eyebrow vi">Le anagrafiche</div>
@@ -513,7 +486,7 @@ img.zoom:hover{opacity:.92}
 </section>
 
 <!-- AMMINISTRAZIONE -->
-<section class="sec sec-soft">
+<section class="sec sec-soft" id="amministrazione">
   <div class="wrap">
     <div class="center" style="margin-bottom:56px">
       <div class="eyebrow or">Amministrazione</div>
@@ -613,84 +586,17 @@ img.zoom:hover{opacity:.92}
   </div>
 </section>
 
-<!-- SUMMARY BAND -->
-<section class="sec" style="padding-top:0">
-  <div class="wrap">
-    <div class="band rv">
-      <h2>In sintesi: cosa ci guadagni</h2>
-      <div class="band-grid">
-        <div class="band-item"><div class="bic">✅</div><h4>Meno errori</h4><p>Niente doppie prenotazioni di mezzi e autisti</p></div>
-        <div class="band-item"><div class="bic">📵</div><h4>Meno telefonate</h4><p>Gli autisti hanno viaggi e navigazione sul telefono</p></div>
-        <div class="band-item"><div class="bic">⚡</div><h4>Meno tempo perso</h4><p>Pianifichi, cerchi ed esporti in pochi clic</p></div>
-        <div class="band-item"><div class="bic">🎯</div><h4>Più controllo</h4><p>Sai chi deve pagarti e chi sta facendo cosa</p></div>
-        <div class="band-item"><div class="bic">🔒</div><h4>Dati al sicuro</h4><p>Accessi protetti e backup automatici</p></div>
-      </div>
-    </div>
+
+<!-- CTA -->
+<section class="sec">
+  <div class="wrap center">
+    <h2 class="h2 rv">Vuoi vederlo sui tuoi dati?</h2>
+    <p class="sub rv d1" style="margin:0 auto 28px">Ti mostro BusItinera in una demo su misura per il tuo tipo di trasporto.</p>
+    <a href="index.html#contatti" class="btn-p rv d2" style="display:inline-flex">Richiedi una demo gratuita
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 </section>
-
-<!-- GALLERIA -->
-<section class="sec" id="galleria">
-  <div class="wrap">
-    <div class="center" style="margin-bottom:56px">
-      <div class="eyebrow vi">Guarda l'app</div>
-      <h2 class="h2 rv">Screenshot reali della dashboard</h2>
-      <p class="sub rv d1">Nessun mockup: queste sono le schermate vere di BusItinera. Clicca su un'immagine per ingrandirla.</p>
-    </div>
-    <div class="gallery">
-      <figure class="gitem rv"><img class="zoom" src="images/calendario.png" data-cap="Calendario — vista mese" alt="Calendario vista mese" loading="lazy"><figcaption>Calendario — vista mese</figcaption></figure>
-      <figure class="gitem rv d1"><img class="zoom" src="images/giorno.png" data-cap="Calendario — vista giorno" alt="Vista giorno" loading="lazy"><figcaption>Calendario — vista giorno</figcaption></figure>
-      <figure class="gitem rv d2"><img class="zoom" src="images/settimana.png" data-cap="Calendario — vista settimana" alt="Vista settimana" loading="lazy"><figcaption>Calendario — vista settimana</figcaption></figure>
-      <figure class="gitem rv"><img class="zoom" src="images/nuovo_viaggio.png" data-cap="Creazione di un nuovo viaggio" alt="Nuovo viaggio" loading="lazy"><figcaption>Nuovo viaggio</figcaption></figure>
-      <figure class="gitem rv d1"><img class="zoom" src="images/dettagli_viaggio.png" data-cap="Dettaglio di un viaggio" alt="Dettaglio viaggio" loading="lazy"><figcaption>Dettaglio viaggio</figcaption></figure>
-      <figure class="gitem rv d2"><img class="zoom" src="images/viaggi_noleggi.png" data-cap="Elenco viaggi e noleggi con filtri" alt="Elenco viaggi e noleggi" loading="lazy"><figcaption>Elenco viaggi e noleggi</figcaption></figure>
-      <figure class="gitem rv"><img class="zoom" src="images/nuovo_noleggio.png" data-cap="Creazione di un nuovo noleggio" alt="Nuovo noleggio" loading="lazy"><figcaption>Nuovo noleggio</figcaption></figure>
-      <figure class="gitem rv d1"><img class="zoom" src="images/nuovo_appuntamento.png" data-cap="Creazione di un nuovo appuntamento" alt="Nuovo appuntamento" loading="lazy"><figcaption>Nuovo appuntamento</figcaption></figure>
-      <figure class="gitem rv d2"><img class="zoom" src="images/preventivi.png" data-cap="Elenco dei preventivi con stati e filtri" alt="Elenco preventivi" loading="lazy"><figcaption>Elenco preventivi</figcaption></figure>
-      <figure class="gitem rv"><img class="zoom" src="images/nuovo_preventivo.png" data-cap="Creazione di un nuovo preventivo" alt="Nuovo preventivo" loading="lazy"><figcaption>Nuovo preventivo</figcaption></figure>
-      <figure class="gitem rv d2"><img class="zoom" src="images/avvisi.png" data-cap="Avvisi sui pagamenti in scadenza e scaduti" alt="Avvisi pagamenti" loading="lazy"><figcaption>Avvisi pagamenti</figcaption></figure>
-      <figure class="gitem rv"><img class="zoom" src="images/veicoli.png" data-cap="Anagrafica veicoli" alt="Anagrafica veicoli" loading="lazy"><figcaption>Anagrafica veicoli</figcaption></figure>
-      <figure class="gitem rv d1"><img class="zoom" src="images/nuovo_veicolo.png" data-cap="Inserimento di un nuovo veicolo" alt="Nuovo veicolo" loading="lazy"><figcaption>Nuovo veicolo</figcaption></figure>
-      <figure class="gitem rv d2"><img class="zoom" src="images/clienti.png" data-cap="Anagrafica clienti" alt="Anagrafica clienti" loading="lazy"><figcaption>Anagrafica clienti</figcaption></figure>
-      <figure class="gitem rv"><img class="zoom" src="images/utenti.png" data-cap="Gestione utenti e ruoli" alt="Utenti e ruoli" loading="lazy"><figcaption>Utenti e ruoli</figcaption></figure>
-      <figure class="gitem rv d1"><img class="zoom" src="images/dati_azienda.png" data-cap="Dati e impostazioni dell'azienda" alt="Dati azienda" loading="lazy"><figcaption>Dati azienda</figcaption></figure>
-      <figure class="gitem rv d2"><img class="zoom" src="images/documentazione.png" data-cap="Documentazione integrata nell'app" alt="Documentazione" loading="lazy"><figcaption>Documentazione integrata</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- CONTATTI -->
-<section class="sec sec-soft" id="contatti">
-  <div class="wrap">
-    <div class="contact-wrap">
-      <div class="rv">
-        <div class="eyebrow or">Contattami</div>
-        <h2 class="h2">Pronto a digitalizzare la tua flotta?</h2>
-        <p class="sub" style="margin-bottom:30px">Sono Andrea Ceol, lo sviluppatore di BusItinera. Scrivimi direttamente per una demo o per qualsiasi domanda: risponde chi ha costruito il programma.</p>
-        <div class="dlinks">
-          <a href="mailto:ceolandrea006@gmail.com" class="dl"><span class="dl-ic">✉️</span><span><strong>ceolandrea006@gmail.com</strong><small>Rispondo entro 24 ore</small></span></a>
-          <a href="tel:+393274997730" class="dl"><span class="dl-ic">📞</span><span><strong>+39 327 499 7730</strong><small>Anche WhatsApp</small></span></a>
-        </div>
-        <div class="benefits">
-          <div class="ben"><div class="ben-ic">🎯</div><div><h4>Demo su misura</h4><p>Ti mostro le funzioni più utili per il tuo tipo di trasporto: NCC, bus, scuolabus.</p></div></div>
-          <div class="ben"><div class="ben-ic">⚡</div><div><h4>Installazione guidata</h4><p>Ti affianco nel setup con i tuoi dati reali, fino al primo accesso.</p></div></div>
-          <div class="ben"><div class="ben-ic">🤝</div><div><h4>Supporto diretto</h4><p>Parli con me. Nessun call center, nessun ticket.</p></div></div>
-        </div>
-      </div>
-      <div class="form rv d1">
-        <div class="fr-grid">
-          <div class="fr"><label for="nome">Il tuo nome</label><input type="text" id="nome" placeholder="Mario Rossi" required></div>
-          <div class="fr"><label for="azienda">Azienda (opzionale)</label><input type="text" id="azienda" placeholder="Trasporti Rossi Srl"></div>
-        </div>
-        <div class="fr"><label for="emailUser">La tua email</label><input type="email" id="emailUser" placeholder="info@tuaazienda.it" required></div>
-        <div class="fr"><label for="telefono">Telefono (opzionale)</label><input type="tel" id="telefono" placeholder="+39 333 123 4567"></div>
-        <div class="fr"><label for="messaggio">Messaggio</label><textarea id="messaggio" placeholder="Parlami della tua flotta: quanti mezzi, che servizio offri, quali problemi vuoi risolvere..." required></textarea></div>
-        <button class="btn-submit" type="button" onclick="inviaForm()">Invia richiesta demo →</button>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
