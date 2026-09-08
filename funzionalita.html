@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Funzionalità — BusItinera</title>
 <link rel="icon" type="image/png" href="logo.png">
-<meta name="description" content="BusItinera: pianifica viaggi, evita doppie prenotazioni di mezzi e autisti, gestisci pagamenti e clienti. Gli autisti vedono i loro viaggi sul telefono. Sul tuo server o nel cloud.">
+<meta name="description" content="Funzionalità di BusItinera: agenda della flotta, viaggi senza doppie prenotazioni, preventivi con revisioni, fatturazione elettronica (FatturaPA), permessi su misura, portale autista. Sul tuo server o nel cloud.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -412,8 +412,28 @@ img.zoom:hover{opacity:.92}
       </div>
     </div>
 
+    <div class="rv" style="margin-top:32px">
+      <div class="card" style="padding:34px 32px">
+        <div style="display:flex;gap:14px;align-items:center;margin-bottom:10px">
+          <div class="card-ic ic-v" style="margin-bottom:0">🕓</div>
+          <h3 style="font-size:1.25rem">Revisioni tracciate, il documento inviato non cambia</h3>
+        </div>
+        <p style="margin-bottom:16px">Un preventivo può avere più revisioni nel tempo, ma quella già inviata al cliente resta congelata: è la copia esatta di ciò che ha ricevuto. Se cambi qualcosa, nasce una nuova revisione, senza sovrascrivere la precedente.</p>
+        <div class="grid2" style="gap:16px">
+          <ul class="clist" style="margin-top:0">
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>La revisione inviata è immutabile: prezzi e dati restano quelli del momento</li>
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Il documento resta archiviato e riscaricabile, con il suo numero di revisione</li>
+          </ul>
+          <ul class="clist" style="margin-top:0">
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Ogni preventivo genera un solo viaggio in tutta la sua vita: niente doppioni</li>
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Cliente creato al volo, con avviso se i dati fiscali sono ancora da completare</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="shot-duo" style="margin-top:44px">
-      <figure class="shot rv"><img class="zoom" src="images/preventivi.png" data-cap="Elenco dei preventivi con stati e filtri" alt="Elenco preventivi" loading="lazy"><figcaption>Elenco preventivi</figcaption></figure>
+      <figure class="shot rv"><img class="zoom" src="images/preventivi.png" data-cap="Elenco dei preventivi con stati e revisioni" alt="Elenco preventivi" loading="lazy"><figcaption>Elenco preventivi, con stati e revisioni</figcaption></figure>
       <figure class="shot rv d1"><img class="zoom" src="images/nuovo_preventivo.png" data-cap="Creazione di un nuovo preventivo" alt="Nuovo preventivo" loading="lazy"><figcaption>Nuovo preventivo</figcaption></figure>
     </div>
 
@@ -502,6 +522,100 @@ img.zoom:hover{opacity:.92}
   </div>
 </section>
 
+<!-- FATTURAZIONE ELETTRONICA -->
+<section class="sec" id="fatturazione">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:56px">
+      <div class="eyebrow">Fatturazione elettronica</div>
+      <h2 class="h2 rv">La fattura elettronica, direttamente dal viaggio</h2>
+      <p class="sub rv d1">BusItinera genera il file XML in formato FatturaPA a partire dai viaggi e dai noleggi che hai già inserito. Nessun doppio inserimento, conti sempre coerenti con quello che hai pianificato.</p>
+    </div>
+    <div class="grid2">
+      <div class="card rv">
+        <div class="card-ic ic-b">🧾</div>
+        <h3>La fatturi partendo dal servizio</h3>
+        <p>Scegli il cliente e spunti i viaggi o i noleggi ancora da fatturare: il documento nasce già compilato, con una riga per ogni servizio.</p>
+        <ul class="clist">
+          <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Fattura riepilogativa: più servizi dello stesso cliente in un unico documento</li>
+          <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Ogni viaggio o noleggio si fattura una volta sola, senza rischio di duplicati</li>
+          <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Intestazioni prese in automatico dai Dati Azienda e dalla scheda del cliente</li>
+        </ul>
+      </div>
+      <div class="card rv d1">
+        <div class="card-ic ic-o">🧮</div>
+        <h3>Il regime giusto, calcolato per te</h3>
+        <p>BusItinera segue il regime fiscale impostato nei Dati Azienda e compila la fattura di conseguenza.</p>
+        <ul class="clist">
+          <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Regime ordinario (RF01): imponibile e IVA calcolati per aliquota</li>
+          <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Regime forfettario (RF19): senza IVA, con la natura corretta e l'imposta di bollo</li>
+          <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Riepilogo IVA e totale documento sempre aggiornati</li>
+        </ul>
+      </div>
+      <div class="card rv d2">
+        <div class="card-ic ic-v">✏️</div>
+        <h3>Anteprima modificabile prima di emettere</h3>
+        <p>Prima di confermare vedi la fattura come sarà e puoi ritoccarla: descrizioni, quantità, prezzi, aliquote e causale. Nulla viene emesso finché non dai l'ok finale.</p>
+        <ul class="clist">
+          <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Aggiungi o togli righe e correggi gli importi al volo</li>
+          <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Totali e bollo ricalcolati in tempo reale mentre modifichi</li>
+          <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Un avviso ti ricorda che le modifiche fiscali vanno fatte con cognizione</li>
+        </ul>
+      </div>
+      <div class="card rv d3">
+        <div class="card-ic ic-g">↩️</div>
+        <h3>Note di credito e numerazione in ordine</h3>
+        <p>Se serve annullare o correggere, emetti una nota di credito collegata alla fattura di origine, in modo totale o parziale.</p>
+        <ul class="clist">
+          <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Storno totale o parziale, scegliendo cosa e quanto stornare</li>
+          <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Numerazione progressiva unica per anno, senza buchi</li>
+          <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>La nota resta collegata alla fattura da cui nasce</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shot-trio">
+      <figure class="shot rv"><img class="zoom" src="images/fatture.png" data-cap="Elenco delle fatture elettroniche" alt="Elenco fatture elettroniche" loading="lazy"><figcaption>Elenco fatture</figcaption></figure>
+      <figure class="shot rv d1"><img class="zoom" src="images/fattura_editor.png" data-cap="Anteprima della fattura modificabile prima dell'emissione" alt="Anteprima fattura modificabile" loading="lazy"><figcaption>Anteprima modificabile</figcaption></figure>
+      <figure class="shot rv d2"><img class="zoom" src="images/nota_credito.png" data-cap="Nota di credito: storno totale o parziale" alt="Nota di credito" loading="lazy"><figcaption>Nota di credito</figcaption></figure>
+    </div>
+
+    <p class="center rv d2" style="margin-top:36px;color:var(--muted);font-size:.95rem;max-width:720px;margin-left:auto;margin-right:auto">Il file XML prodotto è pronto per lo SdI: lo scarichi e lo trasmetti tu o il tuo commercialista. <strong style="color:var(--ink)">Nessun servizio esterno e nessun invio automatico</strong>, coerente con la scelta di tenere i dati in casa.</p>
+  </div>
+</section>
+
+<!-- VIAGGI ALL'ESTERO E KM -->
+<section class="sec sec-soft" id="estero-km">
+  <div class="wrap">
+    <div class="center" style="margin-bottom:56px">
+      <div class="eyebrow or">Estero e chilometri</div>
+      <h2 class="h2 rv">Servizi all'estero e chilometri, gestiti bene</h2>
+      <p class="sub rv d1">Due dettagli che fanno la differenza quando arrivano i conti e le fatture.</p>
+    </div>
+    <div class="grid2">
+      <div class="card rv">
+        <div class="card-ic ic-b">🌍</div>
+        <h3>Servizi all'estero, in regola</h3>
+        <p>Per i viaggi fuori dall'Italia il documento tratta correttamente la parte estera, con la natura IVA giusta e l'imposta di bollo dove serve.</p>
+        <ul class="clist">
+          <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Natura IVA dedicata per le tratte estere</li>
+          <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Imposta di bollo applicata in automatico quando prevista</li>
+          <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Tutto riportato nella fattura elettronica senza correzioni a mano</li>
+        </ul>
+      </div>
+      <div class="card rv d1">
+        <div class="card-ic ic-g">📏</div>
+        <h3>Chilometri sotto controllo</h3>
+        <p>Registri i chilometri alla partenza e al ritorno, sui viaggi e sui noleggi, e tieni aggiornato il chilometraggio di ogni mezzo.</p>
+        <ul class="clist">
+          <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Km di partenza e ritorno direttamente nel modulo del servizio</li>
+          <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Chilometraggio attuale del veicolo nell'anagrafica mezzi</li>
+          <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Un dato in più per costi, rimborsi e manutenzioni</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SICUREZZA & ACCESSI -->
 <section class="sec" id="sicurezza">
   <div class="wrap">
@@ -509,25 +623,31 @@ img.zoom:hover{opacity:.92}
       <div class="rv">
         <div class="eyebrow">Accessi e sicurezza</div>
         <h2 class="h2">I tuoi dati al sicuro, il giusto accesso a ciascuno</h2>
-        <p class="sub">Ognuno entra con il proprio account e vede solo quello che gli spetta. I dati sono protetti e salvati in automatico.</p>
+        <p class="sub">Ognuno entra con il proprio account e vede solo quello che gli spetta. I dati sono protetti, tracciati e salvati in automatico.</p>
         <div class="dlist">
-          <div class="ditem"><div class="dicon di-b">👤</div><div><h4>Accessi su misura</h4><p>Chi comanda tutto (amministratore), chi gestisce i viaggi (editor) e gli autisti che vedono solo i propri. Sai sempre chi fa cosa.</p></div></div>
-          <div class="ditem"><div class="dicon di-g">🔐</div><div><h4>Ingresso protetto</h4><p>Password robuste e, per chi gestisce l'azienda, un secondo codice di sicurezza sul telefono, come per l'home banking.</p></div></div>
+          <div class="ditem"><div class="dicon di-b">👤</div><div><h4>Ruoli e permessi su misura</h4><p>Quattro profili pronti all'uso e, se serve, interruttori per accendere o spegnere singole capacità (preventivi, pagamenti, fatture e altro) utente per utente.</p></div></div>
+          <div class="ditem"><div class="dicon di-g">🔐</div><div><h4>Ingresso protetto e verifica in due passaggi</h4><p>Password robuste e, per chi gestisce l'azienda, l'autenticazione a due fattori con un secondo codice dal telefono, come per l'home banking.</p></div></div>
+          <div class="ditem"><div class="dicon di-v">🗒️</div><div><h4>Registro attività</h4><p>Ogni operazione importante resta tracciata: chi ha fatto cosa e quando, con filtri per tipo e conservazione nel tempo. Utile per controllo e trasparenza.</p></div></div>
           <div class="ditem"><div class="dicon di-o">💾</div><div><h4>Backup automatici</h4><p>I dati vengono salvati ogni giorno e le copie conservate per due settimane. Anche se qualcosa va storto, non si perde nulla.</p></div></div>
         </div>
       </div>
       <div class="rv d1">
         <div class="card" style="padding:38px">
           <div class="card-ic ic-b" style="width:56px;height:56px;font-size:1.6rem">🗂️</div>
-          <h3 style="font-size:1.3rem">Tre livelli di accesso</h3>
-          <p style="margin-bottom:20px">A ognuno il suo, senza rischi di sovrapposizione.</p>
+          <h3 style="font-size:1.3rem">Quattro profili, permessi affinabili</h3>
+          <p style="margin-bottom:20px">Parti da un profilo e, quando serve, regoli i singoli interruttori del singolo utente.</p>
           <div style="display:flex;flex-direction:column;gap:12px">
-            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--primary-soft);border-radius:12px"><strong style="color:var(--primary)">Amministratore</strong><span style="font-size:.86rem;color:var(--ink2)">— gestisce tutto, anche gli utenti</span></div>
-            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--accent-soft);border-radius:12px"><strong style="color:var(--accent)">Editor</strong><span style="font-size:.86rem;color:var(--ink2)">— gestisce i viaggi, non gli utenti</span></div>
-            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--green-soft);border-radius:12px"><strong style="color:var(--green)">Autista</strong><span style="font-size:.86rem;color:var(--ink2)">— vede solo i propri viaggi dal telefono</span></div>
+            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--primary-soft);border-radius:12px"><strong style="color:var(--primary)">Amministratore</strong><span style="font-size:.86rem;color:var(--ink2)">— gestisce tutto, anche utenti e permessi</span></div>
+            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--accent-soft);border-radius:12px"><strong style="color:var(--accent)">Operatore</strong><span style="font-size:.86rem;color:var(--ink2)">— l'operatività quotidiana, modulabile</span></div>
+            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--green-soft);border-radius:12px"><strong style="color:var(--green)">Autista</strong><span style="font-size:.86rem;color:var(--ink2)">— solo i propri viaggi dal telefono</span></div>
+            <div style="display:flex;gap:12px;align-items:center;padding:14px 16px;background:var(--violet-soft);border-radius:12px"><strong style="color:var(--violet)">Consultazione</strong><span style="font-size:.86rem;color:var(--ink2)">— sola lettura, ideale per il commercialista</span></div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="shot-duo" style="margin-top:44px">
+      <figure class="shot rv"><img class="zoom" src="images/permessi.png" data-cap="Permessi su misura: interruttori per singolo utente" alt="Permessi utente con interruttori" loading="lazy"><figcaption>Permessi su misura per ogni utente</figcaption></figure>
+      <figure class="shot rv d1"><img class="zoom" src="images/registro.png" data-cap="Registro attività con filtri per tipo" alt="Registro attività" loading="lazy"><figcaption>Registro attività — chi ha fatto cosa</figcaption></figure>
     </div>
   </div>
 </section>
