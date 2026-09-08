@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BusItinera — Gestionale per il trasporto persone</title>
+<title>Novità — BusItinera</title>
 <link rel="icon" type="image/png" href="logo.png">
-<meta name="description" content="BusItinera: pianifica viaggi, evita doppie prenotazioni di mezzi e autisti, gestisci preventivi, fatturazione elettronica, pagamenti e clienti. Gli autisti vedono i loro viaggi sul telefono. Sul tuo server o nel cloud.">
+<meta name="description" content="Le novità di BusItinera versione dopo versione: fatturazione elettronica, permessi su misura, preventivi con revisioni, chilometri, viaggi all'estero e altro. Cosa è cambiato e perché è utile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -262,119 +262,164 @@ img.zoom:hover{opacity:.92}
     <button class="mob-tog" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-logo rv"><img src="logo.png" alt="BusItinera"></div>
-    <h1 class="rv d1">L'<span class="hl">agenda digitale</span> della tua flotta, <span class="hl2">sempre aggiornata</span></h1>
-    <p class="hero-p rv d2">BusItinera sostituisce quaderni, fogli Excel e messaggi sparsi, in un unico ambiente nel quale pianificare viaggi, sapere sempre quale mezzo e quale autista è libero, e tenere sotto controllo pagamenti e clienti. <br><strong>Gli autisti vedono i loro viaggi direttamente sul telefono.</strong><br></p>
-    <div class="hero-btns rv d3">
-      <a href="#contatti" class="btn-p">Richiedi una demo gratuita
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="funzionalita.html" class="btn-s">Scopri come funziona</a>
-    </div>
-    <p class="hero-note rv d3">Sul tuo server aziendale o nel cloud · Nessun canone obbligatorio · Demo su misura</p>
+<!-- INTRO NOVITA -->
+<section class="sec" style="padding-top:130px;padding-bottom:0">
+  <div class="wrap center">
+    <div class="eyebrow gr">Novità</div>
+    <h1 class="h2 rv" style="font-size:clamp(2rem,4.8vw,3.1rem)">Come è cresciuto BusItinera</h1>
+    <p class="sub rv d1" style="margin:0 auto">BusItinera migliora di continuo. Qui trovi, dalla versione più recente, cosa è arrivato nel tempo e perché ti è utile nel lavoro di ogni giorno.</p>
   </div>
 </section>
 
-<!-- TRUST STRIP -->
-<div class="strip">
-  <div class="wrap">
-    <div class="strip-row rv">
-      <div class="chip"><span class="dot dot-b"></span>Agenda con vista giorno, settimana e mese</div>
-      <div class="chip"><span class="dot dot-o"></span>Niente doppie prenotazioni</div>
-      <div class="chip"><span class="dot dot-g"></span>App per gli autisti sul telefono</div>
-      <div class="chip"><span class="dot dot-v"></span>Navigazione Google Maps integrata</div>
-      <div class="chip"><span class="dot dot-b"></span>Pagamenti sotto controllo</div>
-      <div class="chip"><span class="dot dot-o"></span>Preventivi con revisioni</div>
-      <div class="chip"><span class="dot dot-b"></span>Fatturazione elettronica (FatturaPA)</div>
-      <div class="chip"><span class="dot dot-g"></span>Scadenze di veicoli e patenti</div>
-      <div class="chip"><span class="dot dot-o"></span>Registro attività</div>
-      <div class="chip"><span class="dot dot-v"></span>Note private per l'ufficio</div>
-    </div>
-  </div>
-</div>
+<style>
+.tl{list-style:none;position:relative;padding-left:38px;max-width:820px;margin:0 auto}
+.tl::before{content:'';position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--line2)}
+.tl-item{position:relative;margin-bottom:24px}
+.tl-marker{position:absolute;left:-38px;top:26px;width:20px;height:20px;border-radius:50%;background:var(--primary);border:4px solid var(--bg);box-shadow:0 0 0 1px var(--line2)}
+.tl-item:first-child .tl-marker{background:var(--accent)}
+.tl-head{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.tl-ver{font-weight:800;color:var(--primary);background:var(--primary-soft);border-radius:100px;padding:4px 13px;font-size:.82rem;letter-spacing:.01em}
+.tl-item:first-child .tl-ver{color:var(--accent);background:var(--accent-soft)}
+.tl-date{font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.tl-card h3{font-size:1.15rem;font-weight:700;color:var(--ink);margin-bottom:8px}
+.tl-card>p{color:var(--ink2);font-size:.95rem;line-height:1.65}
+.tl-card .clist{margin-top:14px}
+.tl-note{max-width:820px;margin:36px auto 0;font-size:.9rem;color:var(--muted);line-height:1.6;text-align:center}
+</style>
 
-
-<!-- TEASER -->
-<section class="sec sec-soft">
-  <div class="wrap">
-    <figure class="shot rv" style="max-width:920px;margin:0 auto"><img class="zoom" src="images/calendario.png" data-cap="Calendario — vista mese" alt="Il calendario di BusItinera" loading="lazy"><figcaption>Il calendario di BusItinera — la tua flotta a colpo d'occhio</figcaption></figure>
-  </div>
-</section>
-
-<!-- PANORAMICA -->
+<!-- TIMELINE -->
 <section class="sec">
   <div class="wrap">
-    <div class="center" style="margin-bottom:56px">
-      <div class="eyebrow">Tutto in un posto</div>
-      <h2 class="h2 rv">Cosa fa BusItinera</h2>
-      <p class="sub rv d1">Le funzioni principali in breve. Apri "Funzionalità" per vederle in dettaglio, con gli screenshot reali dell'app.</p>
-    </div>
-    <div class="grid4">
-      <a href="funzionalita.html#calendario" class="card rv" style="text-decoration:none;display:block"><div class="card-ic ic-b">📅</div><h3>Agenda</h3><p>Vista giorno, settimana e mese, con i mezzi a colpo d'occhio.</p></a>
-      <a href="funzionalita.html#gestione" class="card rv d1" style="text-decoration:none;display:block"><div class="card-ic ic-o">🚌</div><h3>Viaggi</h3><p>Crei un viaggio in un modulo solo, senza doppie prenotazioni.</p></a>
-      <a href="funzionalita.html#preventivi" class="card rv d2" style="text-decoration:none;display:block"><div class="card-ic ic-v">📄</div><h3>Preventivi</h3><p>Offerta, conferma d'ordine e conversione in viaggio con un clic.</p></a>
-      <a href="funzionalita.html#autisti" class="card rv d3" style="text-decoration:none;display:block"><div class="card-ic ic-g">📱</div><h3>Portale autista</h3><p>Ogni autista vede i suoi viaggi sul telefono, con navigazione.</p></a>
-      <a href="funzionalita.html#anagrafiche" class="card rv" style="text-decoration:none;display:block"><div class="card-ic ic-b">🗂️</div><h3>Anagrafiche</h3><p>Mezzi, clienti e autisti sempre in ordine e senza doppioni.</p></a>
-      <a href="funzionalita.html#fatturazione" class="card rv d1" style="text-decoration:none;display:block"><div class="card-ic ic-b">🧾</div><h3>Fatturazione</h3><p>Fattura elettronica (FatturaPA) direttamente da viaggi e noleggi.</p></a>
-      <a href="funzionalita.html#amministrazione" class="card rv d2" style="text-decoration:none;display:block"><div class="card-ic ic-o">🔔</div><h3>Amministrazione</h3><p>Avvisi sui pagamenti, export in Excel e ricerca unica.</p></a>
-      <a href="funzionalita.html#sicurezza" class="card rv d3" style="text-decoration:none;display:block"><div class="card-ic ic-g">🔒</div><h3>Accessi e sicurezza</h3><p>Ruoli e permessi su misura, 2FA e registro attività.</p></a>
-      <a href="funzionalita.html#deploy" class="card rv d3" style="text-decoration:none;display:block"><div class="card-ic ic-b">☁️</div><h3>Dove funziona</h3><p>Sul tuo server aziendale o nel cloud: decidi tu.</p></a>
-    </div>
-    <div class="center" style="margin-top:44px">
-      <a href="funzionalita.html" class="btn-p" style="display:inline-flex">Esplora tutte le funzioni
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-<!-- SUMMARY BAND -->
-<section class="sec" style="padding-top:0">
-  <div class="wrap">
-    <div class="band rv">
-      <h2>In sintesi: cosa ci guadagni</h2>
-      <div class="band-grid">
-        <div class="band-item"><div class="bic">✅</div><h4>Meno errori</h4><p>Niente doppie prenotazioni di mezzi e autisti</p></div>
-        <div class="band-item"><div class="bic">📵</div><h4>Meno telefonate</h4><p>Gli autisti hanno viaggi e navigazione sul telefono</p></div>
-        <div class="band-item"><div class="bic">⚡</div><h4>Meno tempo perso</h4><p>Pianifichi, cerchi ed esporti in pochi clic</p></div>
-        <div class="band-item"><div class="bic">🎯</div><h4>Più controllo</h4><p>Sai chi deve pagarti e chi sta facendo cosa</p></div>
-        <div class="band-item"><div class="bic">🔒</div><h4>Dati al sicuro</h4><p>Accessi protetti e backup automatici</p></div>
-      </div>
-    </div>
-  </div>
-</section>
+    <ol class="tl">
 
-<!-- CONTATTI -->
-<section class="sec sec-soft" id="contatti">
-  <div class="wrap">
-    <div class="contact-wrap">
-      <div class="rv">
-        <div class="eyebrow or">Contattami</div>
-        <h2 class="h2">Pronto a digitalizzare la tua flotta?</h2>
-        <p class="sub" style="margin-bottom:30px">Sono Andrea Ceol, lo sviluppatore di BusItinera. Scrivimi direttamente per una demo o per qualsiasi domanda: risponde chi ha costruito il programma.</p>
-        <div class="dlinks">
-          <a href="mailto:ceolandrea006@gmail.com" class="dl"><span class="dl-ic">✉️</span><span><strong>ceolandrea006@gmail.com</strong><small>Rispondo entro 24 ore</small></span></a>
-          <a href="tel:+393274997730" class="dl"><span class="dl-ic">📞</span><span><strong>+39 327 499 7730</strong><small>Anche WhatsApp</small></span></a>
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.10</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Chilometri, viaggi all'estero e saldo</h3>
+          <p>Più precisione sui conti e una gestione corretta dei servizi fuori dall'Italia.</p>
+          <ul class="clist">
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Chilometri di partenza e ritorno su viaggi e noleggi, e chilometraggio del mezzo</li>
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Viaggi all'estero trattati correttamente in fattura, con l'imposta di bollo dove serve</li>
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Fattura con acconto e saldo generata dal viaggio, e conferma d'ordine</li>
+          </ul>
         </div>
-        <div class="benefits">
-          <div class="ben"><div class="ben-ic">🎯</div><div><h4>Demo su misura</h4><p>Ti mostro le funzioni più utili per il tuo tipo di trasporto: NCC, bus, scuolabus.</p></div></div>
-          <div class="ben"><div class="ben-ic">⚡</div><div><h4>Installazione guidata</h4><p>Ti affianco nel setup con i tuoi dati reali, fino al primo accesso.</p></div></div>
-          <div class="ben"><div class="ben-ic">🤝</div><div><h4>Supporto diretto</h4><p>Parli con me. Nessun call center, nessun ticket.</p></div></div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.9</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Documenti che si chiudono e dati fiscali completi</h3>
+          <p>Meno modifiche per sbaglio ai lavori già conclusi e anagrafica aziendale pronta per la fattura.</p>
+          <ul class="clist">
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Viaggi e noleggi si possono chiudere: i chiusi restano visibili in grigio, con un filtro per nasconderli</li>
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Dati azienda più completi (nazione, PEC) per una fatturazione corretta</li>
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Segnalazione automatica di ciò che è già stato fatturato</li>
+          </ul>
         </div>
-      </div>
-      <div class="form rv d1">
-        <div class="fr-grid">
-          <div class="fr"><label for="nome">Il tuo nome</label><input type="text" id="nome" placeholder="Mario Rossi" required></div>
-          <div class="fr"><label for="azienda">Azienda (opzionale)</label><input type="text" id="azienda" placeholder="Trasporti Rossi Srl"></div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.8</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Viste a griglia e filtri più precisi</h3>
+          <p>Trovare quello che cerchi diventa più veloce e leggibile.</p>
+          <ul class="clist">
+            <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Preventivi e viaggi in elenchi a griglia, più chiari da consultare</li>
+            <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Filtri più granulari sui preventivi</li>
+            <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Calendario dei mezzi con evidenza dei conflitti</li>
+          </ul>
         </div>
-        <div class="fr"><label for="emailUser">La tua email</label><input type="email" id="emailUser" placeholder="info@tuaazienda.it" required></div>
-        <div class="fr"><label for="telefono">Telefono (opzionale)</label><input type="tel" id="telefono" placeholder="+39 333 123 4567"></div>
-        <div class="fr"><label for="messaggio">Messaggio</label><textarea id="messaggio" placeholder="Parlami della tua flotta: quanti mezzi, che servizio offri, quali problemi vuoi risolvere..." required></textarea></div>
-        <button class="btn-submit" type="button" onclick="inviaForm()">Invia richiesta demo →</button>
-      </div>
-    </div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.7</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Fatturazione elettronica</h3>
+          <p>La fattura elettronica nasce direttamente dai servizi che hai già inserito.</p>
+          <ul class="clist">
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>File FatturaPA generato da viaggi e noleggi, pronto per lo SdI</li>
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Regime ordinario e forfettario, con calcolo automatico di IVA e bollo</li>
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Anteprima modificabile prima dell'emissione e nota di credito</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.6</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Verifica in due passaggi e registro più chiaro</h3>
+          <p>Accessi più sicuri e consultazione delle attività più comoda.</p>
+          <ul class="clist">
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Autenticazione a due fattori (2FA), con attivazione tracciata nel registro</li>
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Filtri del registro attività a &ldquo;chip&rdquo;, con filtri avanzati a scomparsa</li>
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Guida d'uso integrata nell'app aggiornata</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.5</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Permessi su misura</h3>
+          <p>A ciascuno il giusto livello di accesso, senza compromessi tra semplicità e controllo.</p>
+          <ul class="clist">
+            <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Quattro profili: Amministratore, Operatore, Autista, Consultazione</li>
+            <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Interruttori per accendere o spegnere singole capacità utente per utente</li>
+            <li><svg class="tick-g" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Protezione che impedisce di restare senza un amministratore</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.4</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Più solidità e tracciamento</h3>
+          <p>Il gestionale protegge meglio i tuoi dati e tiene memoria di cosa succede.</p>
+          <ul class="clist">
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Registro attività: chi ha fatto cosa e quando</li>
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Blocco delle modifiche ai viaggi già fatturati o pagati</li>
+            <li><svg class="tick-v" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Controlli su Partita IVA e Codice Fiscale, e unione dei clienti doppioni</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.3</span><span class="tl-date">Settembre 2026</span></div>
+          <h3>Preventivi con revisioni</h3>
+          <p>Le offerte inviate al cliente non cambiano più per sbaglio.</p>
+          <ul class="clist">
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Ogni preventivo può avere più revisioni; quella inviata resta congelata</li>
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Documento archiviato e riscaricabile, con il suo numero di revisione</li>
+            <li><svg class="tick-b" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Conversione in viaggio con un clic, un solo viaggio per preventivo</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item rv">
+        <div class="tl-marker"></div>
+        <div class="card tl-card">
+          <div class="tl-head"><span class="tl-ver">Versione 1.1</span><span class="tl-date">Aprile 2026</span></div>
+          <h3>Le fondamenta: multi-azienda e sicurezza</h3>
+          <p>La base su cui è costruito tutto il resto.</p>
+          <ul class="clist">
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Ogni azienda ha la sua installazione, sul proprio server o nel cloud</li>
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Sicurezza di serie: accessi protetti e backup automatici</li>
+            <li><svg class="tick-o" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Personalizzazioni come logo e colori, senza perdere gli aggiornamenti</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+    <p class="tl-note rv">Le versioni più recenti vengono rilasciate in modo graduale sulle installazioni. Vuoi provarle sui tuoi dati? <a href="index.html#contatti" style="color:var(--primary);font-weight:600;text-decoration:none">Richiedi una demo</a>.</p>
   </div>
 </section>
 
